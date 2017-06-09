@@ -1,0 +1,52 @@
+20/05/17 12:44:52 INFO  smtpserver: SMTP Service uses default thread group.
+20/05/17 12:44:52 INFO  smtpserver: SMTP Service is running on: Admin
+20/05/17 12:44:52 INFO  smtpserver: SMTP Service handler hello name is: Admin
+20/05/17 12:44:52 INFO  smtpserver: SMTP Service handler connection timeout is: 360000
+20/05/17 12:44:52 INFO  smtpserver: SMTP Service connection backlog is: 5
+20/05/17 12:44:52 INFO  smtpserver: SMTP Service will allow a maximum of 30 connections.
+20/05/17 12:44:52 INFO  smtpserver: This SMTP server requires authentication, but doesn't verify that the authentication credentials match the sender address.
+20/05/17 12:44:52 INFO  smtpserver: Authorized addresses: [127.0.0.0/255.0.0.0]
+20/05/17 12:44:52 INFO  smtpserver: No maximum message size is enforced for this server.
+20/05/17 12:44:52 INFO  smtpserver: The idle timeout will be reset every 20480 bytes.
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.VrfyCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.AuthCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.QuitCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.HelpCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.HeloCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.MailCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.DataCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.RcptCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.EhloCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added MessageHandler: org.apache.james.smtpserver.SendMailHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.NoopCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.ExpnCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.RsetCmdHandler
+20/05/17 12:44:52 INFO  smtpserver: SMTP Service started plain:25
+20/05/17 15:45:42 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 15:45:46 INFO  smtpserver: Successfully spooled mail Mail1495266345685-0 from admin@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 15:46:41 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 15:46:41 INFO  smtpserver: Successfully spooled mail Mail1495266401712-1 from admin@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 15:46:54 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 15:46:54 INFO  smtpserver: Successfully spooled mail Mail1495266414675-2 from admin@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 15:47:52 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 15:47:52 INFO  smtpserver: Successfully spooled mail Mail1495266472093-3 from admin@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 15:48:07 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 15:48:07 INFO  smtpserver: Successfully spooled mail Mail1495266487056-4 from admin@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 16:36:30 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:36:30 INFO  smtpserver: Successfully spooled mail Mail1495269390706-5 from admin@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 16:36:45 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:36:45 INFO  smtpserver: Successfully spooled mail Mail1495269405543-6 from admin@james.com on 127.0.0.1 for [test@james.com]
+20/05/17 16:37:07 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:37:07 INFO  smtpserver: Successfully spooled mail Mail1495269427519-7 from admin@james.com on 127.0.0.1 for [test@james.com]
+20/05/17 16:37:35 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:37:36 INFO  smtpserver: Successfully spooled mail Mail1495269455996-8 from test@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 16:37:48 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:37:48 INFO  smtpserver: Successfully spooled mail Mail1495269468383-9 from test@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 16:38:03 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:38:03 INFO  smtpserver: Successfully spooled mail Mail1495269483039-10 from test@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 16:38:13 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:38:13 INFO  smtpserver: Successfully spooled mail Mail1495269493125-11 from test@james.com on 127.0.0.1 for [admin@james.com]
+20/05/17 16:41:07 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:41:07 INFO  smtpserver: Successfully spooled mail Mail1495269667903-12 from admin@james.com on 127.0.0.1 for [test@james.com]
+20/05/17 16:41:18 INFO  smtpserver: Connection from james.com (127.0.0.1)
+20/05/17 16:41:18 INFO  smtpserver: Successfully spooled mail Mail1495269678959-13 from admin@james.com on 127.0.0.1 for [test@james.com]

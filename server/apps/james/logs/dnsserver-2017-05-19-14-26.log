@@ -1,0 +1,7 @@
+19/05/17 14:26:54 INFO  dnsserver: Autodiscovery is enabled - trying to discover your system's DNS Servers
+19/05/17 14:26:54 INFO  dnsserver: Adding autodiscovered server 202.103.44.150
+19/05/17 14:26:54 INFO  dnsserver: Adding autodiscovered server 202.103.24.68
+19/05/17 14:26:54 INFO  dnsserver: Adding autodiscovered server 192.168.155.1
+19/05/17 14:26:54 INFO  dnsserver: DNS Server is: 202.103.44.150
+19/05/17 14:26:54 INFO  dnsserver: DNS Server is: 202.103.24.68
+19/05/17 14:26:54 INFO  dnsserver: DNS Server is: 192.168.155.1

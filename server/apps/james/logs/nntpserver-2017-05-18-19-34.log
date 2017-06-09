@@ -1,0 +1,7 @@
+18/05/17 19:34:31 INFO  nntpserver: NNTP Service uses default thread group.
+18/05/17 19:34:31 INFO  nntpserver: NNTP Service is running on: Admin
+18/05/17 19:34:31 INFO  nntpserver: NNTP Service handler hello name is: Admin
+18/05/17 19:34:31 INFO  nntpserver: NNTP Service handler connection timeout is: 120000
+18/05/17 19:34:31 INFO  nntpserver: NNTP Service connection backlog is: 5
+18/05/17 19:34:31 INFO  nntpserver: NNTP Service will allow a maximum of 30 connections.
+18/05/17 19:34:31 INFO  nntpserver: NNTP Service started plain:119

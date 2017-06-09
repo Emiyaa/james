@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miku.dao.MailMapperCustom">
+    <resultMap id="BaseResultMap" type="com.miku.po.Inbox" >
+        <id column="repository_name" property="repositoryName" jdbcType="VARCHAR" />
+        <id column="message_name" property="messageName" jdbcType="VARCHAR" />
+        <result column="message_state" property="messageState" jdbcType="VARCHAR" />
+        <result column="error_message" property="errorMessage" jdbcType="VARCHAR" />
+        <result column="sender" property="sender" jdbcType="VARCHAR" />
+        <result column="remote_host" property="remoteHost" jdbcType="VARCHAR" />
+        <result column="remote_addr" property="remoteAddr" jdbcType="VARCHAR" />
+        <result column="last_updated" property="lastUpdated" jdbcType="TIMESTAMP" />
+    </resultMap>
+    <resultMap id="ResultMapWithBLOBs" type="com.miku.po.InboxWithBLOBs" extends="BaseResultMap" >
+        <result column="recipients" property="recipients" jdbcType="LONGVARCHAR" />
+        <result column="message_body" property="messageBody" jdbcType="LONGVARBINARY" />
+        <result column="message_attributes" property="messageAttributes" jdbcType="LONGVARBINARY" />
+    </resultMap>
+    <resultMap id="KeyBaseResultMap" type="com.miku.po.Rsakey" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+    </resultMap>
+    <resultMap id="KeyResultMapWithBLOBs" type="com.miku.po.Rsakey" extends="KeyBaseResultMap" >
+        <result column="publicKey" property="publickey" jdbcType="LONGVARCHAR" />
+        <result column="privateKey" property="privatekey" jdbcType="LONGVARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        repository_name, i.message_name, message_state, error_message, sender, remote_host,
+        remote_addr, last_updated
+    </sql>
+    <!--
+        <select id="recipientMail" resultMap="BaseResultMap" parameterType="java.lang.String">
+            select
+            <include refid="Base_Column_List"/>
+            from mail
+            where recipient = #{recipient,jdbcType=VARCHAR}
+        </select>
+    -->
+
+    <select id="sentMail" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from inbox
+        where sender = #{sender,jdbcType=VARCHAR}
+    </select>
+
+    <select id="draftMail" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from inbox i INNER JOIN mail_flag m ON i.message_name = m.message_name
+        WHERE isdraft = 1
+    </select>
+
+    <select id="deleteMail" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from inbox i INNER JOIN mail_flag m ON i.message_name = m.message_name
+        WHERE isdelete = 1
+    </select>
+
+    <select id="selectKey" resultMap="KeyResultMapWithBLOBs">
+        select * from rsakey ;
+    </select>
+
+</mapper>

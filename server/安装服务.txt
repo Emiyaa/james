@@ -1,0 +1,4 @@
+wrapper -i wrapper.conf		//安装
+
+
+wrapper -i wrapper.conf		//卸载

@@ -1,0 +1,14 @@
+17/05/17 16:45:15 INFO  pop3server: POP3 Service uses default thread group.
+17/05/17 16:45:15 INFO  pop3server: POP3 Service is running on: Admin
+17/05/17 16:45:15 INFO  pop3server: POP3 Service handler hello name is: Admin
+17/05/17 16:45:15 INFO  pop3server: POP3 Service handler connection timeout is: 120000
+17/05/17 16:45:15 INFO  pop3server: POP3 Service connection backlog is: 5
+17/05/17 16:45:15 INFO  pop3server: POP3 Service will allow a maximum of 30 connections.
+17/05/17 16:45:15 INFO  pop3server: The idle timeout will be reset every 20480 bytes.
+17/05/17 16:45:15 INFO  pop3server: POP3 Service started plain:110
+17/05/17 16:50:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+17/05/17 16:50:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+17/05/17 16:50:50 INFO  pop3server: Connection from james.com (127.0.0.1) 
+17/05/17 16:50:52 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+17/05/17 20:50:17 INFO  pop3server: Connection from james.com (127.0.0.1) 
+17/05/17 20:50:25 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.

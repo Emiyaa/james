@@ -1,0 +1,7 @@
+27/05/17 10:39:38 INFO  remotemanager: Remote Manager Service uses default thread group.
+27/05/17 10:39:38 INFO  remotemanager: Remote Manager Service is running on: Admin
+27/05/17 10:39:38 INFO  remotemanager: Remote Manager Service handler hello name is: Admin
+27/05/17 10:39:38 INFO  remotemanager: Remote Manager Service handler connection timeout is: 60000
+27/05/17 10:39:38 INFO  remotemanager: Remote Manager Service connection backlog is: 5
+27/05/17 10:39:38 INFO  remotemanager: Remote Manager Service will allow a maximum of 30 connections.
+27/05/17 10:39:38 INFO  remotemanager: Remote Manager Service started plain:4555

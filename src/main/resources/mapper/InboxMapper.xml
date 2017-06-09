@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miku.mapper.InboxMapper" >
+  <resultMap id="BaseResultMap" type="com.miku.po.Inbox" >
+    <id column="repository_name" property="repositoryName" jdbcType="VARCHAR" />
+    <id column="message_name" property="messageName" jdbcType="VARCHAR" />
+    <result column="message_state" property="messageState" jdbcType="VARCHAR" />
+    <result column="error_message" property="errorMessage" jdbcType="VARCHAR" />
+    <result column="sender" property="sender" jdbcType="VARCHAR" />
+    <result column="remote_host" property="remoteHost" jdbcType="VARCHAR" />
+    <result column="remote_addr" property="remoteAddr" jdbcType="VARCHAR" />
+    <result column="last_updated" property="lastUpdated" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.miku.po.InboxWithBLOBs" extends="BaseResultMap" >
+    <result column="recipients" property="recipients" jdbcType="LONGVARCHAR" />
+    <result column="message_body" property="messageBody" jdbcType="LONGVARBINARY" />
+    <result column="message_attributes" property="messageAttributes" jdbcType="LONGVARBINARY" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    repository_name, message_name, message_state, error_message, sender, remote_host, 
+    remote_addr, last_updated
+  </sql>
+  <sql id="Blob_Column_List" >
+    recipients, message_body, message_attributes
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.miku.po.InboxExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from inbox
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.miku.po.InboxExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from inbox
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="com.miku.po.InboxKey" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from inbox
+    where repository_name = #{repositoryName,jdbcType=VARCHAR}
+      and message_name = #{messageName,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.miku.po.InboxKey" >
+    delete from inbox
+    where repository_name = #{repositoryName,jdbcType=VARCHAR}
+      and message_name = #{messageName,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.miku.po.InboxExample" >
+    delete from inbox
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.miku.po.InboxWithBLOBs" >
+    insert into inbox (repository_name, message_name, message_state, 
+      error_message, sender, remote_host, 
+      remote_addr, last_updated, recipients, 
+      message_body, message_attributes
+      )
+    values (#{repositoryName,jdbcType=VARCHAR}, #{messageName,jdbcType=VARCHAR}, #{messageState,jdbcType=VARCHAR}, 
+      #{errorMessage,jdbcType=VARCHAR}, #{sender,jdbcType=VARCHAR}, #{remoteHost,jdbcType=VARCHAR}, 
+      #{remoteAddr,jdbcType=VARCHAR}, #{lastUpdated,jdbcType=TIMESTAMP}, #{recipients,jdbcType=LONGVARCHAR}, 
+      #{messageBody,jdbcType=LONGVARBINARY}, #{messageAttributes,jdbcType=LONGVARBINARY}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.miku.po.InboxWithBLOBs" >
+    insert into inbox
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="repositoryName != null" >
+        repository_name,
+      </if>
+      <if test="messageName != null" >
+        message_name,
+      </if>
+      <if test="messageState != null" >
+        message_state,
+      </if>
+      <if test="errorMessage != null" >
+        error_message,
+      </if>
+      <if test="sender != null" >
+        sender,
+      </if>
+      <if test="remoteHost != null" >
+        remote_host,
+      </if>
+      <if test="remoteAddr != null" >
+        remote_addr,
+      </if>
+      <if test="lastUpdated != null" >
+        last_updated,
+      </if>
+      <if test="recipients != null" >
+        recipients,
+      </if>
+      <if test="messageBody != null" >
+        message_body,
+      </if>
+      <if test="messageAttributes != null" >
+        message_attributes,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="repositoryName != null" >
+        #{repositoryName,jdbcType=VARCHAR},
+      </if>
+      <if test="messageName != null" >
+        #{messageName,jdbcType=VARCHAR},
+      </if>
+      <if test="messageState != null" >
+        #{messageState,jdbcType=VARCHAR},
+      </if>
+      <if test="errorMessage != null" >
+        #{errorMessage,jdbcType=VARCHAR},
+      </if>
+      <if test="sender != null" >
+        #{sender,jdbcType=VARCHAR},
+      </if>
+      <if test="remoteHost != null" >
+        #{remoteHost,jdbcType=VARCHAR},
+      </if>
+      <if test="remoteAddr != null" >
+        #{remoteAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdated != null" >
+        #{lastUpdated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="recipients != null" >
+        #{recipients,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="messageBody != null" >
+        #{messageBody,jdbcType=LONGVARBINARY},
+      </if>
+      <if test="messageAttributes != null" >
+        #{messageAttributes,jdbcType=LONGVARBINARY},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.miku.po.InboxExample" resultType="java.lang.Integer" >
+    select count(*) from inbox
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update inbox
+    <set >
+      <if test="record.repositoryName != null" >
+        repository_name = #{record.repositoryName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.messageName != null" >
+        message_name = #{record.messageName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.messageState != null" >
+        message_state = #{record.messageState,jdbcType=VARCHAR},
+      </if>
+      <if test="record.errorMessage != null" >
+        error_message = #{record.errorMessage,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sender != null" >
+        sender = #{record.sender,jdbcType=VARCHAR},
+      </if>
+      <if test="record.remoteHost != null" >
+        remote_host = #{record.remoteHost,jdbcType=VARCHAR},
+      </if>
+      <if test="record.remoteAddr != null" >
+        remote_addr = #{record.remoteAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lastUpdated != null" >
+        last_updated = #{record.lastUpdated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.recipients != null" >
+        recipients = #{record.recipients,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.messageBody != null" >
+        message_body = #{record.messageBody,jdbcType=LONGVARBINARY},
+      </if>
+      <if test="record.messageAttributes != null" >
+        message_attributes = #{record.messageAttributes,jdbcType=LONGVARBINARY},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update inbox
+    set repository_name = #{record.repositoryName,jdbcType=VARCHAR},
+      message_name = #{record.messageName,jdbcType=VARCHAR},
+      message_state = #{record.messageState,jdbcType=VARCHAR},
+      error_message = #{record.errorMessage,jdbcType=VARCHAR},
+      sender = #{record.sender,jdbcType=VARCHAR},
+      remote_host = #{record.remoteHost,jdbcType=VARCHAR},
+      remote_addr = #{record.remoteAddr,jdbcType=VARCHAR},
+      last_updated = #{record.lastUpdated,jdbcType=TIMESTAMP},
+      recipients = #{record.recipients,jdbcType=LONGVARCHAR},
+      message_body = #{record.messageBody,jdbcType=LONGVARBINARY},
+      message_attributes = #{record.messageAttributes,jdbcType=LONGVARBINARY}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update inbox
+    set repository_name = #{record.repositoryName,jdbcType=VARCHAR},
+      message_name = #{record.messageName,jdbcType=VARCHAR},
+      message_state = #{record.messageState,jdbcType=VARCHAR},
+      error_message = #{record.errorMessage,jdbcType=VARCHAR},
+      sender = #{record.sender,jdbcType=VARCHAR},
+      remote_host = #{record.remoteHost,jdbcType=VARCHAR},
+      remote_addr = #{record.remoteAddr,jdbcType=VARCHAR},
+      last_updated = #{record.lastUpdated,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.miku.po.InboxWithBLOBs" >
+    update inbox
+    <set >
+      <if test="messageState != null" >
+        message_state = #{messageState,jdbcType=VARCHAR},
+      </if>
+      <if test="errorMessage != null" >
+        error_message = #{errorMessage,jdbcType=VARCHAR},
+      </if>
+      <if test="sender != null" >
+        sender = #{sender,jdbcType=VARCHAR},
+      </if>
+      <if test="remoteHost != null" >
+        remote_host = #{remoteHost,jdbcType=VARCHAR},
+      </if>
+      <if test="remoteAddr != null" >
+        remote_addr = #{remoteAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdated != null" >
+        last_updated = #{lastUpdated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="recipients != null" >
+        recipients = #{recipients,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="messageBody != null" >
+        message_body = #{messageBody,jdbcType=LONGVARBINARY},
+      </if>
+      <if test="messageAttributes != null" >
+        message_attributes = #{messageAttributes,jdbcType=LONGVARBINARY},
+      </if>
+    </set>
+    where repository_name = #{repositoryName,jdbcType=VARCHAR}
+      and message_name = #{messageName,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.miku.po.InboxWithBLOBs" >
+    update inbox
+    set message_state = #{messageState,jdbcType=VARCHAR},
+      error_message = #{errorMessage,jdbcType=VARCHAR},
+      sender = #{sender,jdbcType=VARCHAR},
+      remote_host = #{remoteHost,jdbcType=VARCHAR},
+      remote_addr = #{remoteAddr,jdbcType=VARCHAR},
+      last_updated = #{lastUpdated,jdbcType=TIMESTAMP},
+      recipients = #{recipients,jdbcType=LONGVARCHAR},
+      message_body = #{messageBody,jdbcType=LONGVARBINARY},
+      message_attributes = #{messageAttributes,jdbcType=LONGVARBINARY}
+    where repository_name = #{repositoryName,jdbcType=VARCHAR}
+      and message_name = #{messageName,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.miku.po.Inbox" >
+    update inbox
+    set message_state = #{messageState,jdbcType=VARCHAR},
+      error_message = #{errorMessage,jdbcType=VARCHAR},
+      sender = #{sender,jdbcType=VARCHAR},
+      remote_host = #{remoteHost,jdbcType=VARCHAR},
+      remote_addr = #{remoteAddr,jdbcType=VARCHAR},
+      last_updated = #{lastUpdated,jdbcType=TIMESTAMP}
+    where repository_name = #{repositoryName,jdbcType=VARCHAR}
+      and message_name = #{messageName,jdbcType=VARCHAR}
+  </update>
+</mapper>

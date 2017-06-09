@@ -1,0 +1,730 @@
+18/05/17 20:35:49 INFO  pop3server: POP3 Service uses default thread group.
+18/05/17 20:35:49 INFO  pop3server: POP3 Service is running on: Admin
+18/05/17 20:35:49 INFO  pop3server: POP3 Service handler hello name is: Admin
+18/05/17 20:35:49 INFO  pop3server: POP3 Service handler connection timeout is: 120000
+18/05/17 20:35:49 INFO  pop3server: POP3 Service connection backlog is: 5
+18/05/17 20:35:49 INFO  pop3server: POP3 Service will allow a maximum of 30 connections.
+18/05/17 20:35:49 INFO  pop3server: The idle timeout will be reset every 20480 bytes.
+18/05/17 20:35:49 INFO  pop3server: POP3 Service started plain:110
+18/05/17 20:57:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 20:57:32 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 20:57:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 20:57:32 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 20:58:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 20:58:32 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 20:58:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 20:58:32 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 20:59:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 20:59:32 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 20:59:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 20:59:32 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:00:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:00:32 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:00:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:00:32 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:01:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:01:32 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:01:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:01:32 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:02:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:02:32 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:02:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:02:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:03:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:03:32 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:03:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:03:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:04:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:04:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:04:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:04:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:05:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:05:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:05:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:05:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:06:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:06:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:06:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:06:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:07:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:07:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:07:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:07:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:08:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:08:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:08:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:08:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:09:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:09:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:09:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:09:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:10:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:10:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:10:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:10:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:11:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:11:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:11:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:11:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:12:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:12:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:12:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:12:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:13:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:13:33 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:13:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:13:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:13:48 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:14:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:14:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:14:33 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:14:34 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:15:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:15:34 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:15:35 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:15:35 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:16:34 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:16:34 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:16:35 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:16:35 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:16:42 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 21:17:07 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:17:07 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:17:34 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:17:34 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:18:07 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:18:07 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:18:34 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:18:34 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:19:07 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:19:07 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:19:20 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:19:20 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:19:52 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:20:07 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:20:07 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:20:20 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:20:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:21:07 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:21:07 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:21:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:21:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:22:07 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:22:07 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:22:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:22:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:23:07 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:23:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:23:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:23:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:23:52 ERROR pop3server: POP3 Connection has idled out.
+18/05/17 21:23:52 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Socket Closed
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 21:24:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:24:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:24:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:24:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:25:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:25:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:25:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:25:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:26:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:26:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:26:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:26:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:27:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:27:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:27:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:27:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:28:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:28:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:28:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:28:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:29:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:29:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:29:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:29:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:30:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:30:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:30:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:30:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:31:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:31:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:31:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:31:21 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:32:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:32:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:32:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:32:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:33:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:33:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:33:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:33:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:34:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:34:08 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:34:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:34:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:34:30 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:35:08 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:35:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:35:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:35:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:36:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:36:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:36:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:36:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:37:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:37:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:37:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:37:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:38:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:38:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:38:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:38:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:38:30 ERROR pop3server: POP3 Connection has idled out.
+18/05/17 21:38:30 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Socket Closed
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 21:39:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:39:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:39:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:39:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:40:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:40:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:40:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:40:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:41:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:41:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:41:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:41:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:42:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:42:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:42:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:42:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:43:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:43:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:43:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:43:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:44:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:44:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:44:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:44:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:45:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:45:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:45:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:45:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:46:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:46:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:46:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:46:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:47:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:47:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:47:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:47:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:48:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:48:09 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:48:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:48:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:49:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:49:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:49:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:49:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:50:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:50:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:50:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:50:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:51:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:51:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:51:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:51:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:52:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:52:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:52:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:52:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:53:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:53:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:53:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:53:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:54:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:54:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:54:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:54:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:55:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:55:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:55:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:55:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:56:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:56:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:56:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:56:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:57:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:57:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:57:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:57:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:58:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:58:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:58:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:58:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 21:59:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:59:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 21:59:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 21:59:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:00:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:00:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:00:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:00:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:01:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:01:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:01:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:01:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:02:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:02:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:02:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:02:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:03:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:03:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:03:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:03:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:04:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:04:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:04:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:04:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:05:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:05:10 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:05:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:05:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:06:10 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:06:11 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:06:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:06:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:07:11 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:07:11 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:07:15 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:07:15 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:07:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:07:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:08:15 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:08:15 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:08:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:08:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:08:48 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:08:48 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:09:04 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:09:04 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:09:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:09:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:09:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:10:05 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:10:05 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:10:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:10:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:10:41 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 22:11:05 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:11:05 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:11:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:11:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:11:24 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:11:25 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:22:21 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:22:21 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:26:56 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:26:56 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:28:14 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:28:15 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:28:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:28:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:28:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:28:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:28:36 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:29:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:29:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:29:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:29:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:30:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:30:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:30:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:30:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:31:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:31:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:31:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:31:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:32:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:32:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:32:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:32:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:32:36 ERROR pop3server: POP3 Connection has idled out.
+18/05/17 22:32:36 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Socket Closed
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 22:33:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:33:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:33:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:33:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:33:35 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:33:35 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:33:42 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:33:42 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:33:58 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:33:58 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:34:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:34:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:34:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:34:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:35:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:35:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:35:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:35:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:36:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:36:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:36:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:36:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:36:27 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:37:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:37:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:37:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:37:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:38:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:38:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:38:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:38:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:39:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:39:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:39:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:39:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:40:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:40:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:40:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:40:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:40:27 ERROR pop3server: POP3 Connection has idled out.
+18/05/17 22:40:27 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Socket Closed
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 22:41:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:41:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:41:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:41:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:42:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:42:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:42:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:42:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:43:13 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:43:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:43:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:43:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:43:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:44:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:44:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:44:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:44:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:45:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:45:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:45:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:45:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:46:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:46:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:46:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:46:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:47:13 ERROR pop3server: POP3 Connection has idled out.
+18/05/17 22:47:13 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Socket Closed
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 22:47:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:47:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:47:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:47:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:48:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:48:22 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:48:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:48:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:49:22 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:49:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:49:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:49:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:50:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:50:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:50:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:50:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:51:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:51:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:51:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:51:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:52:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:52:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:52:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:52:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:53:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:53:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:53:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:53:23 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:53:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:54:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:54:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:54:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:54:24 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:54:56 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 22:55:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:55:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:55:24 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:55:24 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:56:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:56:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:56:24 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:56:24 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:57:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:57:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:57:24 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:57:24 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:58:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:58:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:58:24 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:58:24 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 22:59:09 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:59:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:59:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 22:59:24 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 22:59:25 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:00:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:00:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:00:25 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:00:25 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:01:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:01:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:01:25 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:01:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:01:28 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:02:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:02:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:02:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:02:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:03:09 ERROR pop3server: POP3 Connection has idled out.
+18/05/17 23:03:09 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Socket Closed
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 23:03:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:03:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:03:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:03:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:03:39 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:04:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:04:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:04:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:04:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:05:12 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 23:05:12 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 23:05:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:05:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:05:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:05:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:06:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:06:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:06:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:06:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:06:49 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:07:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:07:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:07:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:07:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:08:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:08:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:08:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:08:26 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:08:45 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:08:45 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:09:15 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:09:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:09:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:09:26 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:09:27 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:09:43 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:10:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:10:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:10:27 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:10:27 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:10:49 ERROR pop3server: POP3 Connection has idled out.
+18/05/17 23:10:49 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Socket Closed
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 23:11:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:11:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:11:27 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:11:27 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:12:15 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 23:12:15 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+18/05/17 23:12:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:12:23 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:12:27 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:12:27 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:13:23 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:13:24 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:13:27 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:13:27 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:14:24 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:14:24 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.
+18/05/17 23:14:27 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:14:27 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:14:27 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:14:27 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+18/05/17 23:14:30 INFO  pop3server: Connection from james.com (127.0.0.1) 
+18/05/17 23:14:30 INFO  pop3server: Connection for test from james.com (127.0.0.1) closed.

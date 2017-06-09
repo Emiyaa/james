@@ -1,0 +1,8 @@
+18/05/17 19:34:31 INFO  pop3server: POP3 Service uses default thread group.
+18/05/17 19:34:31 INFO  pop3server: POP3 Service is running on: Admin
+18/05/17 19:34:31 INFO  pop3server: POP3 Service handler hello name is: Admin
+18/05/17 19:34:31 INFO  pop3server: POP3 Service handler connection timeout is: 120000
+18/05/17 19:34:31 INFO  pop3server: POP3 Service connection backlog is: 5
+18/05/17 19:34:31 INFO  pop3server: POP3 Service will allow a maximum of 30 connections.
+18/05/17 19:34:31 INFO  pop3server: The idle timeout will be reset every 20480 bytes.
+18/05/17 19:34:31 INFO  pop3server: POP3 Service started plain:110

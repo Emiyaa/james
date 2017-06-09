@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miku.mapper.MailMapper" >
+  <resultMap id="BaseResultMap" type="com.miku.po.Mail" >
+    <id column="mailid" property="mailid" jdbcType="VARCHAR" />
+    <result column="subject" property="subject" jdbcType="VARCHAR" />
+    <result column="sendname" property="sendname" jdbcType="VARCHAR" />
+    <result column="sender" property="sender" jdbcType="VARCHAR" />
+    <result column="recipientname" property="recipientname" jdbcType="VARCHAR" />
+    <result column="recipient" property="recipient" jdbcType="VARCHAR" />
+    <result column="sendtime" property="sendtime" jdbcType="TIMESTAMP" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    mailid, subject, sendname, sender, recipientname, recipient, sendtime, content
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.miku.po.MailExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from mail
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from mail
+    where mailid = #{mailid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from mail
+    where mailid = #{mailid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.miku.po.MailExample" >
+    delete from mail
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.miku.po.Mail" >
+    insert into mail (mailid, subject, sendname, 
+      sender, recipientname, recipient, 
+      sendtime, content)
+    values (#{mailid,jdbcType=VARCHAR}, #{subject,jdbcType=VARCHAR}, #{sendname,jdbcType=VARCHAR}, 
+      #{sender,jdbcType=VARCHAR}, #{recipientname,jdbcType=VARCHAR}, #{recipient,jdbcType=VARCHAR}, 
+      #{sendtime,jdbcType=TIMESTAMP}, #{content,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.miku.po.Mail" >
+    insert into mail
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="mailid != null" >
+        mailid,
+      </if>
+      <if test="subject != null" >
+        subject,
+      </if>
+      <if test="sendname != null" >
+        sendname,
+      </if>
+      <if test="sender != null" >
+        sender,
+      </if>
+      <if test="recipientname != null" >
+        recipientname,
+      </if>
+      <if test="recipient != null" >
+        recipient,
+      </if>
+      <if test="sendtime != null" >
+        sendtime,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="mailid != null" >
+        #{mailid,jdbcType=VARCHAR},
+      </if>
+      <if test="subject != null" >
+        #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="sendname != null" >
+        #{sendname,jdbcType=VARCHAR},
+      </if>
+      <if test="sender != null" >
+        #{sender,jdbcType=VARCHAR},
+      </if>
+      <if test="recipientname != null" >
+        #{recipientname,jdbcType=VARCHAR},
+      </if>
+      <if test="recipient != null" >
+        #{recipient,jdbcType=VARCHAR},
+      </if>
+      <if test="sendtime != null" >
+        #{sendtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.miku.po.MailExample" resultType="java.lang.Integer" >
+    select count(*) from mail
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update mail
+    <set >
+      <if test="record.mailid != null" >
+        mailid = #{record.mailid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.subject != null" >
+        subject = #{record.subject,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sendname != null" >
+        sendname = #{record.sendname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sender != null" >
+        sender = #{record.sender,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recipientname != null" >
+        recipientname = #{record.recipientname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recipient != null" >
+        recipient = #{record.recipient,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sendtime != null" >
+        sendtime = #{record.sendtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.content != null" >
+        content = #{record.content,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update mail
+    set mailid = #{record.mailid,jdbcType=VARCHAR},
+      subject = #{record.subject,jdbcType=VARCHAR},
+      sendname = #{record.sendname,jdbcType=VARCHAR},
+      sender = #{record.sender,jdbcType=VARCHAR},
+      recipientname = #{record.recipientname,jdbcType=VARCHAR},
+      recipient = #{record.recipient,jdbcType=VARCHAR},
+      sendtime = #{record.sendtime,jdbcType=TIMESTAMP},
+      content = #{record.content,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.miku.po.Mail" >
+    update mail
+    <set >
+      <if test="subject != null" >
+        subject = #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="sendname != null" >
+        sendname = #{sendname,jdbcType=VARCHAR},
+      </if>
+      <if test="sender != null" >
+        sender = #{sender,jdbcType=VARCHAR},
+      </if>
+      <if test="recipientname != null" >
+        recipientname = #{recipientname,jdbcType=VARCHAR},
+      </if>
+      <if test="recipient != null" >
+        recipient = #{recipient,jdbcType=VARCHAR},
+      </if>
+      <if test="sendtime != null" >
+        sendtime = #{sendtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where mailid = #{mailid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.miku.po.Mail" >
+    update mail
+    set subject = #{subject,jdbcType=VARCHAR},
+      sendname = #{sendname,jdbcType=VARCHAR},
+      sender = #{sender,jdbcType=VARCHAR},
+      recipientname = #{recipientname,jdbcType=VARCHAR},
+      recipient = #{recipient,jdbcType=VARCHAR},
+      sendtime = #{sendtime,jdbcType=TIMESTAMP},
+      content = #{content,jdbcType=VARCHAR}
+    where mailid = #{mailid,jdbcType=VARCHAR}
+  </update>
+</mapper>

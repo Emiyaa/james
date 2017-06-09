@@ -1,0 +1,63 @@
+19/05/17 14:26:55 INFO  mailstore: JamesMailStore init...
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.AvalonMailRepository to handle file protocol requests for repositories of type MAIL
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.AvalonSpoolRepository to handle file protocol requests for repositories of type SPOOL
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.JDBCMailRepository to handle db protocol requests for repositories of type MAIL
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.JDBCSpoolRepository to handle db protocol requests for repositories of type SPOOL
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.JDBCMailRepository to handle dbfile protocol requests for repositories of type MAIL
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.JDBCSpoolRepository to handle dbfile protocol requests for repositories of type SPOOL
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.MBoxMailRepository to handle mbox protocol requests for repositories of type MAIL
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository to handle file protocol requests for repositories of type OBJECT
+19/05/17 14:26:55 INFO  mailstore: Registering Repository instance of class org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository to handle file protocol requests for repositories of type STREAM
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository opened in D:\com\james\apps\james\var\mail\spool
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/spool/STREAM->org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository opened in D:\com\james\apps\james\var\mail\spool
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/spool/OBJECT->org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/spool/SPOOL->org.apache.james.mailrepository.AvalonSpoolRepository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository opened in D:\com\james\apps\james\var\dbmail
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/dbmailSTREAM->org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository
+19/05/17 14:26:55 INFO  mailstore: JdbcMailRepository 'null, table 'inbox': JDBC Mail Attributes support ready.
+19/05/17 14:26:55 INFO  mailstore: added repository: dbfile://maildb/inbox/MAIL->org.apache.james.mailrepository.JDBCMailRepository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository opened in D:\com\james\apps\james\var\mail\error
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/error/STREAM->org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository opened in D:\com\james\apps\james\var\mail\error
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/error/OBJECT->org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/error/MAIL->org.apache.james.mailrepository.AvalonMailRepository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository opened in D:\com\james\apps\james\var\mail\outgoing
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/outgoing/STREAM->org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository opened in D:\com\james\apps\james\var\mail\outgoing
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/outgoing/OBJECT->org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/outgoing/SPOOL->org.apache.james.mailrepository.AvalonSpoolRepository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository opened in D:\com\james\apps\james\var\mail\spam
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/spam/STREAM->org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository opened in D:\com\james\apps\james\var\mail\spam
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/spam/OBJECT->org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/spam/MAIL->org.apache.james.mailrepository.AvalonMailRepository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository opened in D:\com\james\apps\james\var\mail\address-error
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/address-error/STREAM->org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository opened in D:\com\james\apps\james\var\mail\address-error
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/address-error/OBJECT->org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/address-error/MAIL->org.apache.james.mailrepository.AvalonMailRepository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository opened in D:\com\james\apps\james\var\mail\relay-denied
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/relay-denied/STREAM->org.apache.james.mailrepository.filepair.File_Persistent_Stream_Repository
+19/05/17 14:26:55 INFO  mailstore: Init org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository Store
+19/05/17 14:26:55 INFO  mailstore: org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository opened in D:\com\james\apps\james\var\mail\relay-denied
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/relay-denied/OBJECT->org.apache.james.mailrepository.filepair.File_Persistent_Object_Repository
+19/05/17 14:26:55 INFO  mailstore: added repository: file://var/mail/relay-denied/MAIL->org.apache.james.mailrepository.AvalonMailRepository
+19/05/17 14:27:54 INFO  mailstore: JdbcMailRepository 'admin, table 'inbox': JDBC Mail Attributes support ready.
+19/05/17 14:27:54 INFO  mailstore: added repository: dbfile://maildb/inbox/admin/MAIL->org.apache.james.mailrepository.JDBCMailRepository
+19/05/17 14:27:59 INFO  mailstore: JdbcMailRepository 'test, table 'inbox': JDBC Mail Attributes support ready.
+19/05/17 14:27:59 INFO  mailstore: added repository: dbfile://maildb/inbox/test/MAIL->org.apache.james.mailrepository.JDBCMailRepository
+19/05/17 14:43:00 INFO  mailstore: JdbcMailRepository 'test, table 'inbox': JDBC Mail Attributes support ready.
+19/05/17 14:43:00 INFO  mailstore: added repository: dbfile://maildb/inbox/test/MAIL->org.apache.james.mailrepository.JDBCMailRepository

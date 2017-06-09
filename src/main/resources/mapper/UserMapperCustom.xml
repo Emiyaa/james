@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miku.dao.UserMapperCustom" >
+    <resultMap id="BaseResultMap" type="com.miku.po.User" >
+        <result column="usernickname" property="usernickname" jdbcType="VARCHAR" />
+        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="usermail" property="usermail" jdbcType="VARCHAR" />
+        <result column="userbirthday" property="userbirthday" jdbcType="DATE" />
+        <result column="usermobile" property="usermobile" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+    usernickname, username, usermail, userbirthday, usermobile
+  </sql>
+    <select id="selectByUsername" resultMap="BaseResultMap" parameterType="java.lang.String" >
+        select
+        <include refid="Base_Column_List" />
+        from user
+        where username = #{username,jdbcType=VARCHAR}
+    </select>
+
+</mapper>

@@ -1,0 +1,66 @@
+18/05/17 20:35:49 INFO  smtpserver: SMTP Service uses default thread group.
+18/05/17 20:35:49 INFO  smtpserver: SMTP Service is running on: Admin
+18/05/17 20:35:49 INFO  smtpserver: SMTP Service handler hello name is: Admin
+18/05/17 20:35:49 INFO  smtpserver: SMTP Service handler connection timeout is: 360000
+18/05/17 20:35:49 INFO  smtpserver: SMTP Service connection backlog is: 5
+18/05/17 20:35:49 INFO  smtpserver: SMTP Service will allow a maximum of 30 connections.
+18/05/17 20:35:49 INFO  smtpserver: This SMTP server requires authentication, but doesn't verify that the authentication credentials match the sender address.
+18/05/17 20:35:49 INFO  smtpserver: Authorized addresses: [127.0.0.0/255.0.0.0]
+18/05/17 20:35:49 INFO  smtpserver: No maximum message size is enforced for this server.
+18/05/17 20:35:49 INFO  smtpserver: The idle timeout will be reset every 20480 bytes.
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.VrfyCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.AuthCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.QuitCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.HelpCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.HeloCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.MailCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.DataCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.RcptCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.EhloCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added MessageHandler: org.apache.james.smtpserver.SendMailHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.NoopCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.ExpnCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: Added Commandhandler: org.apache.james.smtpserver.RsetCmdHandler
+18/05/17 20:35:49 INFO  smtpserver: SMTP Service started plain:25
+18/05/17 21:13:22 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 21:13:22 INFO  smtpserver: Successfully spooled mail Mail1495113202596-0 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 21:18:11 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 21:18:11 INFO  smtpserver: Successfully spooled mail Mail1495113491780-1 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 21:18:53 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 21:18:53 INFO  smtpserver: Successfully spooled mail Mail1495113533073-2 from admin@james.com on 127.0.0.1 for [test@james.com]
+18/05/17 21:22:31 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 21:22:31 INFO  smtpserver: Successfully spooled mail Mail1495113751446-3 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 22:08:20 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 22:08:21 INFO  smtpserver: Successfully spooled mail Mail1495116501042-4 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 22:10:39 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 22:10:39 INFO  smtpserver: Successfully spooled mail Mail1495116639461-5 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 22:22:58 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 22:22:58 ERROR smtpserver: Unknown error occurred while processing DATA.
+javax.mail.MessagingException: Error in input stream;
+  nested exception is:
+	java.net.ProtocolException: pre-mature end of data
+	at javax.mail.internet.InternetHeaders.load(InternetHeaders.java:365)
+	at org.apache.james.core.MailHeaders.<init>(MailHeaders.java:61)
+	at org.apache.james.smtpserver.DataCmdHandler.doDATA(DataCmdHandler.java:131)
+	at org.apache.james.smtpserver.DataCmdHandler.onCommand(DataCmdHandler.java:81)
+	at org.apache.james.smtpserver.SMTPHandler.handleConnection(SMTPHandler.java:393)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+Caused by: java.net.ProtocolException: pre-mature end of data
+	at org.apache.james.util.CharTerminatedInputStream.read(CharTerminatedInputStream.java:103)
+	at org.apache.james.util.watchdog.BytesReadResetInputStream.read(BytesReadResetInputStream.java:98)
+	at org.apache.james.util.DotStuffingInputStream.read(DotStuffingInputStream.java:50)
+	at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:88)
+	at javax.mail.internet.InternetHeaders.load(InternetHeaders.java:342)
+	... 7 more
+18/05/17 22:27:47 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 22:27:47 INFO  smtpserver: Successfully spooled mail Mail1495117667686-6 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 22:53:17 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 22:53:17 INFO  smtpserver: Successfully spooled mail Mail1495119197388-7 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 22:59:00 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 22:59:00 INFO  smtpserver: Successfully spooled mail Mail1495119540504-8 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 23:06:41 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 23:06:41 INFO  smtpserver: Successfully spooled mail Mail1495120001088-9 from admin@james.com on 127.0.0.1 for [admin@james.com]
+18/05/17 23:08:35 INFO  smtpserver: Connection from james.com (127.0.0.1)
+18/05/17 23:08:35 INFO  smtpserver: Successfully spooled mail Mail1495120115920-10 from admin@james.com on 127.0.0.1 for [admin@james.com]

@@ -1,0 +1,44 @@
+16/05/17 20:47:48 INFO  pop3server: POP3 Service uses default thread group.
+16/05/17 20:47:48 INFO  pop3server: POP3 Service is running on: Admin
+16/05/17 20:47:48 INFO  pop3server: POP3 Service handler hello name is: Admin
+16/05/17 20:47:48 INFO  pop3server: POP3 Service handler connection timeout is: 120000
+16/05/17 20:47:48 INFO  pop3server: POP3 Service connection backlog is: 5
+16/05/17 20:47:48 INFO  pop3server: POP3 Service will allow a maximum of 30 connections.
+16/05/17 20:47:48 INFO  pop3server: The idle timeout will be reset every 20480 bytes.
+16/05/17 20:47:48 INFO  pop3server: POP3 Service started plain:110
+16/05/17 20:49:51 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 20:49:55 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 20:51:19 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 20:51:54 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 20:56:20 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:00:20 ERROR pop3server: POP3 Connection has idled out.
+16/05/17 21:00:20 ERROR pop3server: Exception during connection from james.com (127.0.0.1) : Socket Closed
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.james.util.CRLFTerminatedReader.read(CRLFTerminatedReader.java:153)
+	at org.apache.james.util.CRLFTerminatedReader.readLine(CRLFTerminatedReader.java:113)
+	at org.apache.james.pop3server.POP3Handler.readCommandLine(POP3Handler.java:424)
+	at org.apache.james.pop3server.POP3Handler.handleConnection(POP3Handler.java:277)
+	at org.apache.james.util.connection.ServerConnection$ClientConnectionRunner.run(ServerConnection.java:432)
+	at org.apache.excalibur.thread.impl.ExecutableRunnable.execute(ExecutableRunnable.java:55)
+	at org.apache.excalibur.thread.impl.WorkerThread.run(WorkerThread.java:116)
+16/05/17 21:05:33 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:06:19 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 21:10:04 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:10:07 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 21:10:16 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:10:18 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 21:13:18 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:13:25 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 21:13:39 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:13:41 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 21:21:53 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:21:58 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 21:22:11 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:22:12 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.
+16/05/17 21:23:20 INFO  pop3server: Connection from james.com (127.0.0.1) 
+16/05/17 21:23:22 INFO  pop3server: Connection for admin from james.com (127.0.0.1) closed.

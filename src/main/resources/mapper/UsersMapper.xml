@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miku.mapper.UsersMapper" >
+  <resultMap id="BaseResultMap" type="com.miku.po.Users" >
+    <id column="username" property="username" jdbcType="VARCHAR" />
+    <result column="pwdHash" property="pwdhash" jdbcType="VARCHAR" />
+    <result column="pwdAlgorithm" property="pwdalgorithm" jdbcType="VARCHAR" />
+    <result column="useForwarding" property="useforwarding" jdbcType="SMALLINT" />
+    <result column="forwardDestination" property="forwarddestination" jdbcType="VARCHAR" />
+    <result column="useAlias" property="usealias" jdbcType="SMALLINT" />
+    <result column="alias" property="alias" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    username, pwdHash, pwdAlgorithm, useForwarding, forwardDestination, useAlias, alias
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.miku.po.UsersExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from users
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from users
+    where username = #{username,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from users
+    where username = #{username,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.miku.po.UsersExample" >
+    delete from users
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.miku.po.Users" >
+    insert into users (username, pwdHash, pwdAlgorithm, 
+      useForwarding, forwardDestination, useAlias, 
+      alias)
+    values (#{username,jdbcType=VARCHAR}, #{pwdhash,jdbcType=VARCHAR}, #{pwdalgorithm,jdbcType=VARCHAR}, 
+      #{useforwarding,jdbcType=SMALLINT}, #{forwarddestination,jdbcType=VARCHAR}, #{usealias,jdbcType=SMALLINT}, 
+      #{alias,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.miku.po.Users" >
+    insert into users
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="pwdhash != null" >
+        pwdHash,
+      </if>
+      <if test="pwdalgorithm != null" >
+        pwdAlgorithm,
+      </if>
+      <if test="useforwarding != null" >
+        useForwarding,
+      </if>
+      <if test="forwarddestination != null" >
+        forwardDestination,
+      </if>
+      <if test="usealias != null" >
+        useAlias,
+      </if>
+      <if test="alias != null" >
+        alias,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="pwdhash != null" >
+        #{pwdhash,jdbcType=VARCHAR},
+      </if>
+      <if test="pwdalgorithm != null" >
+        #{pwdalgorithm,jdbcType=VARCHAR},
+      </if>
+      <if test="useforwarding != null" >
+        #{useforwarding,jdbcType=SMALLINT},
+      </if>
+      <if test="forwarddestination != null" >
+        #{forwarddestination,jdbcType=VARCHAR},
+      </if>
+      <if test="usealias != null" >
+        #{usealias,jdbcType=SMALLINT},
+      </if>
+      <if test="alias != null" >
+        #{alias,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.miku.po.UsersExample" resultType="java.lang.Integer" >
+    select count(*) from users
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update users
+    <set >
+      <if test="record.username != null" >
+        username = #{record.username,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pwdhash != null" >
+        pwdHash = #{record.pwdhash,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pwdalgorithm != null" >
+        pwdAlgorithm = #{record.pwdalgorithm,jdbcType=VARCHAR},
+      </if>
+      <if test="record.useforwarding != null" >
+        useForwarding = #{record.useforwarding,jdbcType=SMALLINT},
+      </if>
+      <if test="record.forwarddestination != null" >
+        forwardDestination = #{record.forwarddestination,jdbcType=VARCHAR},
+      </if>
+      <if test="record.usealias != null" >
+        useAlias = #{record.usealias,jdbcType=SMALLINT},
+      </if>
+      <if test="record.alias != null" >
+        alias = #{record.alias,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update users
+    set username = #{record.username,jdbcType=VARCHAR},
+      pwdHash = #{record.pwdhash,jdbcType=VARCHAR},
+      pwdAlgorithm = #{record.pwdalgorithm,jdbcType=VARCHAR},
+      useForwarding = #{record.useforwarding,jdbcType=SMALLINT},
+      forwardDestination = #{record.forwarddestination,jdbcType=VARCHAR},
+      useAlias = #{record.usealias,jdbcType=SMALLINT},
+      alias = #{record.alias,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.miku.po.Users" >
+    update users
+    <set >
+      <if test="pwdhash != null" >
+        pwdHash = #{pwdhash,jdbcType=VARCHAR},
+      </if>
+      <if test="pwdalgorithm != null" >
+        pwdAlgorithm = #{pwdalgorithm,jdbcType=VARCHAR},
+      </if>
+      <if test="useforwarding != null" >
+        useForwarding = #{useforwarding,jdbcType=SMALLINT},
+      </if>
+      <if test="forwarddestination != null" >
+        forwardDestination = #{forwarddestination,jdbcType=VARCHAR},
+      </if>
+      <if test="usealias != null" >
+        useAlias = #{usealias,jdbcType=SMALLINT},
+      </if>
+      <if test="alias != null" >
+        alias = #{alias,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where username = #{username,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.miku.po.Users" >
+    update users
+    set pwdHash = #{pwdhash,jdbcType=VARCHAR},
+      pwdAlgorithm = #{pwdalgorithm,jdbcType=VARCHAR},
+      useForwarding = #{useforwarding,jdbcType=SMALLINT},
+      forwardDestination = #{forwarddestination,jdbcType=VARCHAR},
+      useAlias = #{usealias,jdbcType=SMALLINT},
+      alias = #{alias,jdbcType=VARCHAR}
+    where username = #{username,jdbcType=VARCHAR}
+  </update>
+</mapper>

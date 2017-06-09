@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miku.mapper.MailFlagMapper" >
+  <resultMap id="BaseResultMap" type="com.miku.po.MailFlag" >
+    <id column="message_name" property="messageName" jdbcType="VARCHAR" />
+    <result column="isdraft" property="isdraft" jdbcType="INTEGER" />
+    <result column="isdelete" property="isdelete" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    message_name, isdraft, isdelete
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.miku.po.MailFlagExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from mail_flag
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from mail_flag
+    where message_name = #{messageName,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from mail_flag
+    where message_name = #{messageName,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.miku.po.MailFlagExample" >
+    delete from mail_flag
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.miku.po.MailFlag" >
+    insert into mail_flag (message_name, isdraft, isdelete
+      )
+    values (#{messageName,jdbcType=VARCHAR}, #{isdraft,jdbcType=INTEGER}, #{isdelete,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.miku.po.MailFlag" >
+    insert into mail_flag
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="messageName != null" >
+        message_name,
+      </if>
+      <if test="isdraft != null" >
+        isdraft,
+      </if>
+      <if test="isdelete != null" >
+        isdelete,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="messageName != null" >
+        #{messageName,jdbcType=VARCHAR},
+      </if>
+      <if test="isdraft != null" >
+        #{isdraft,jdbcType=INTEGER},
+      </if>
+      <if test="isdelete != null" >
+        #{isdelete,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.miku.po.MailFlagExample" resultType="java.lang.Integer" >
+    select count(*) from mail_flag
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update mail_flag
+    <set >
+      <if test="record.messageName != null" >
+        message_name = #{record.messageName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isdraft != null" >
+        isdraft = #{record.isdraft,jdbcType=INTEGER},
+      </if>
+      <if test="record.isdelete != null" >
+        isdelete = #{record.isdelete,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update mail_flag
+    set message_name = #{record.messageName,jdbcType=VARCHAR},
+      isdraft = #{record.isdraft,jdbcType=INTEGER},
+      isdelete = #{record.isdelete,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.miku.po.MailFlag" >
+    update mail_flag
+    <set >
+      <if test="isdraft != null" >
+        isdraft = #{isdraft,jdbcType=INTEGER},
+      </if>
+      <if test="isdelete != null" >
+        isdelete = #{isdelete,jdbcType=INTEGER},
+      </if>
+    </set>
+    where message_name = #{messageName,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.miku.po.MailFlag" >
+    update mail_flag
+    set isdraft = #{isdraft,jdbcType=INTEGER},
+      isdelete = #{isdelete,jdbcType=INTEGER}
+    where message_name = #{messageName,jdbcType=VARCHAR}
+  </update>
+</mapper>

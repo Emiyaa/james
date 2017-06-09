@@ -1,0 +1,96 @@
+16/05/17 20:45:33 INFO  spoolmanager: JamesSpoolManager init...
+16/05/17 20:45:33 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet PostmasterAlias instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher RelayLimit=30 instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet Null instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher HasMailAttributeWithValue=org.apache.james.infected, true instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToProcessor instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher HasMailAttribute=spamChecked instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToProcessor instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet SetMailAttribute instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher SMTPAuthSuccessful instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToProcessor instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher InSpammerBlacklist=query.bondedsender.org. instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToProcessor instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher InSpammerBlacklist=dnsbl.njabl.org. instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToProcessor instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToProcessor instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Processor root instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToRepository instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Processor error instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher SMTPAuthSuccessful instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet SetMimeHeader instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher HasMailAttribute=org.apache.james.SMIMECheckSignature instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet SetMimeHeader instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher RecipientIsLocal instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet LocalDelivery instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher HostIsLocal instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToProcessor instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet RemoteDelivery instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Processor transport instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet ToRepository instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Processor spam instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Mailet SetMailAttribute instantiated.
+16/05/17 20:45:33 INFO  spoolmanager: Matcher SMTPAuthSuccessful instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Mailet Bounce instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Mailet Null instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Processor virus instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Mailet ToRepository instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Processor local-address-error instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Mailet ToRepository instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Processor relay-denied instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Matcher All instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Mailet DSNBounce instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Processor bounces instantiated.
+16/05/17 20:45:34 INFO  spoolmanager: Spooler Manager uses 10 Thread(s)
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #0
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #1
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #2
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #4
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #3
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #5
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #6
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #7
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #8
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:45:34 INFO  spoolmanager: Run JamesSpoolManager: Spool Thread #9
+16/05/17 20:45:34 INFO  spoolmanager: Spool=com.sun.proxy.$Proxy5
+16/05/17 20:47:25 INFO  spoolmanager: JamesSpoolManager dispose...
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #0
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #7
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #9
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #9
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #6
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #5
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #6
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #2
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #1
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #4
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #7
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #3
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #0
+16/05/17 20:47:25 INFO  spoolmanager: Interrupted JamesSpoolManager: Spool Thread #8
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #3
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #4
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #1
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #2
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #5
+16/05/17 20:47:25 INFO  spoolmanager: Stop JamesSpoolManager: Spool Thread #8
+16/05/17 20:47:26 INFO  spoolmanager: JamesSpoolManager thread shutdown completed.

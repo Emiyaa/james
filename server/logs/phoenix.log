@@ -1,0 +1,90 @@
+INFO    2017-06-05 21:06:33.683 [Phoenix ] (): Logger started
+INFO    2017-06-05 21:06:33.869 [Phoenix.] (): Installing Sar located at file:/D:/com/james/apps/james.sar.
+WARN    2017-06-05 21:06:34.049 [Phoenix.] (): The file conf/sqlResources.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\sqlResources.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.049 [Phoenix.] (): The file conf/james-fetchmail.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\james-fetchmail.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.049 [Phoenix.] (): The file conf/james-smtphandlerchain.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\james-smtphandlerchain.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.050 [Phoenix.] (): The file conf/miResources.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\miResources.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.050 [Phoenix.] (): The file conf/james-listmanager.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\james-listmanager.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.051 [Phoenix.] (): The file conf/james-liststores.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\james-liststores.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.053 [Phoenix.] (): The file conf/samples/fetchmail/maxMessageSize.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\samples\fetchmail\maxMessageSize.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.054 [Phoenix.] (): The file conf/samples/fetchmail/oneAccountManyUsers.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\samples\fetchmail\oneAccountManyUsers.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.054 [Phoenix.] (): The file conf/samples/fetchmail/oneAccountManyUsersDynamic.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\samples\fetchmail\oneAccountManyUsersDynamic.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.055 [Phoenix.] (): The file conf/samples/fetchmail/oneAccountPerUser.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\samples\fetchmail\oneAccountPerUser.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.055 [Phoenix.] (): The file conf/samples/fetchmail/oneAccountPerUserDynamic.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\samples\fetchmail\oneAccountPerUserDynamic.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.055 [Phoenix.] (): The file conf/samples/fetchmail/remoteReceivedHeader.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\conf\samples\fetchmail\remoteReceivedHeader.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.056 [Phoenix.] (): The file SAR-INF/config.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\SAR-INF\config.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.057 [Phoenix.] (): The file SAR-INF/assembly.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\SAR-INF\assembly.xml because there is a file in the way.
+WARN    2017-06-05 21:06:34.057 [Phoenix.] (): The file SAR-INF/environment.xml can not be extracted from the Sar "file:/D:/com/james/apps/james.sar" into directory D:\com\james\apps\james\SAR-INF\environment.xml because there is a file in the way.
+INFO    2017-06-05 21:06:34.475 [Phoenix.] (): Verifying that all key-stores have valid names.
+INFO    2017-06-05 21:06:34.475 [Phoenix.] (): Verify that any keystore names used by grant or permission reference actual keystores
+INFO    2017-06-05 21:06:34.475 [Phoenix.] (): Verify that if target is null then actions is null.
+INFO    2017-06-05 21:06:34.717 [Phoenix.] (): Verifying that the name specified for Blocks and BlockListeners are valid.
+INFO    2017-06-05 21:06:34.719 [Phoenix.] (): Verifying that the names specified for Component are valid.
+INFO    2017-06-05 21:06:34.720 [Phoenix.] (): Verifying that the names specified for the Components are unique.
+INFO    2017-06-05 21:06:34.720 [Phoenix.] (): Verifying that the dependency mapping is valid according to ComponentInfos.
+INFO    2017-06-05 21:06:34.720 [Phoenix.] (): Verifying that the dependency mapping for every Component is valid with respect to other components.
+INFO    2017-06-05 21:06:34.721 [Phoenix.] (): Verifying that there are no circular dependencies between Components.
+INFO    2017-06-05 21:06:34.728 [Phoenix.] (): Verifying that the name specified for Blocks and BlockListeners are unique.
+INFO    2017-06-05 21:06:34.728 [Phoenix.] (): Verifying that the specified Blocks have valid types.
+INFO    2017-06-05 21:06:34.761 [Phoenix.] (): Verifying that the specified BlockListeners have valid types.
+INFO    2017-06-05 21:06:34.811 [Phoenix.] (): 20 Blocks to process for phase "startup". Order of processing = [dnsserver, database-connections, mailstore, users-store, localusersrepository, spoolrepository, sockets, thread-manager, scheduler, James, mailetpackages, matcherpackages, spoolmanager, connections, remotemanager, pop3server, smtpserver, nntp-repository, nntpserver, fetchmail].
+INFO    2017-06-05 22:58:37.419 [Phoenix.] (): 20 Blocks to process for phase "shutdown". Order of processing = [spoolmanager, matcherpackages, mailetpackages, remotemanager, pop3server, smtpserver, fetchmail, James, dnsserver, nntpserver, nntp-repository, spoolrepository, localusersrepository, users-store, mailstore, connections, sockets, scheduler, database-connections, thread-manager].
+ERROR   2017-06-05 22:58:38.724 [Phoenix.] (): Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).
+ERROR   2017-06-05 22:58:38.725 [Phoenix.] (): Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).
+ERROR   2017-06-05 22:58:38.725 [Phoenix.] (): There was an error running phase "shutdown" for Block named "thread-manager". (Reason: Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).).
+org.apache.avalon.phoenix.containerkit.lifecycle.LifecycleException: Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).
+	at org.apache.avalon.phoenix.containerkit.lifecycle.LifecycleHelper.fail(LifecycleHelper.java:354)
+	at org.apache.avalon.phoenix.containerkit.lifecycle.LifecycleHelper.shutdown(LifecycleHelper.java:288)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.shutdown(DefaultApplication.java:566)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.doRunPhase(DefaultApplication.java:482)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.runPhase(DefaultApplication.java:409)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.stop(DefaultApplication.java:233)
+	at org.apache.avalon.framework.container.ContainerUtil.stop(ContainerUtil.java:292)
+rethrown from
+java.lang.IllegalThreadStateException
+	at java.lang.ThreadGroup.destroy(ThreadGroup.java:775)
+	at org.apache.avalon.excalibur.thread.impl.DefaultThreadPool.dispose(DefaultThreadPool.java:76)
+	at org.apache.avalon.framework.container.ContainerUtil.dispose(ContainerUtil.java:306)
+	at org.apache.avalon.cornerstone.blocks.threads.AbstractThreadManager.dispose(AbstractThreadManager.java:69)
+	at org.apache.avalon.framework.container.ContainerUtil.dispose(ContainerUtil.java:306)
+	at org.apache.avalon.phoenix.containerkit.lifecycle.LifecycleHelper.shutdown(LifecycleHelper.java:274)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.shutdown(DefaultApplication.java:566)
+INFO    2017-06-05 22:58:38.729 [Phoenix.] (): exception while stopping:Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).
+
+ERROR   2017-06-05 22:58:38.731 [Phoenix.] (): Error undeploying application "james" when disposing Deployer. (Reason: Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).)
+org.apache.avalon.phoenix.interfaces.DeploymentException: Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).
+	at org.apache.avalon.phoenix.components.deployer.DefaultDeployer.undeploy(DefaultDeployer.java:249)
+	at org.apache.avalon.phoenix.components.deployer.DefaultDeployer.dispose(DefaultDeployer.java:154)
+	at org.apache.avalon.framework.container.ContainerUtil.dispose(ContainerUtil.java:306)
+	at org.apache.avalon.framework.container.ContainerUtil.shutdown(ContainerUtil.java:67)
+	at org.apache.avalon.phoenix.components.embeddor.DefaultEmbeddor.shutdownComponents(DefaultEmbeddor.java:598)
+	at org.apache.avalon.phoenix.components.embeddor.DefaultEmbeddor.dispose(DefaultEmbeddor.java:342)
+	at org.apache.avalon.framework.container.ContainerUtil.dispose(ContainerUtil.java:306)
+rethrown from
+org.apache.avalon.phoenix.interfaces.ApplicationException: Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.stop(DefaultApplication.java:239)
+	at org.apache.avalon.framework.container.ContainerUtil.stop(ContainerUtil.java:292)
+	at org.apache.avalon.framework.container.ContainerUtil.shutdown(ContainerUtil.java:66)
+	at org.apache.avalon.phoenix.components.kernel.DefaultKernel.shutdown(DefaultKernel.java:346)
+	at org.apache.avalon.phoenix.components.kernel.DefaultKernel.removeApplication(DefaultKernel.java:455)
+	at org.apache.avalon.phoenix.components.deployer.DefaultDeployer.undeploy(DefaultDeployer.java:244)
+	at org.apache.avalon.phoenix.components.deployer.DefaultDeployer.dispose(DefaultDeployer.java:154)
+rethrown from
+org.apache.avalon.phoenix.containerkit.lifecycle.LifecycleException: Component named "thread-manager" failed to pass through the Destruction stage. (Reason: java.lang.IllegalThreadStateException).
+	at org.apache.avalon.phoenix.containerkit.lifecycle.LifecycleHelper.fail(LifecycleHelper.java:354)
+	at org.apache.avalon.phoenix.containerkit.lifecycle.LifecycleHelper.shutdown(LifecycleHelper.java:288)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.shutdown(DefaultApplication.java:566)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.doRunPhase(DefaultApplication.java:482)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.runPhase(DefaultApplication.java:409)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.stop(DefaultApplication.java:233)
+	at org.apache.avalon.framework.container.ContainerUtil.stop(ContainerUtil.java:292)
+rethrown from
+java.lang.IllegalThreadStateException
+	at java.lang.ThreadGroup.destroy(ThreadGroup.java:775)
+	at org.apache.avalon.excalibur.thread.impl.DefaultThreadPool.dispose(DefaultThreadPool.java:76)
+	at org.apache.avalon.framework.container.ContainerUtil.dispose(ContainerUtil.java:306)
+	at org.apache.avalon.cornerstone.blocks.threads.AbstractThreadManager.dispose(AbstractThreadManager.java:69)
+	at org.apache.avalon.framework.container.ContainerUtil.dispose(ContainerUtil.java:306)
+	at org.apache.avalon.phoenix.containerkit.lifecycle.LifecycleHelper.shutdown(LifecycleHelper.java:274)
+	at org.apache.avalon.phoenix.components.application.DefaultApplication.shutdown(DefaultApplication.java:566)
+INFO    2017-06-05 22:58:38.789 [Phoenix ] (): Shutting down because there are not any applications running.

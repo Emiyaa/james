@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miku.mapper.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.miku.po.User" >
+    <id column="username" property="username" jdbcType="VARCHAR" />
+    <result column="usernickname" property="usernickname" jdbcType="VARCHAR" />
+    <result column="usermail" property="usermail" jdbcType="VARCHAR" />
+    <result column="userbirthday" property="userbirthday" jdbcType="DATE" />
+    <result column="usermobile" property="usermobile" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    username, usernickname, usermail, userbirthday, usermobile
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.miku.po.UserExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where username = #{username,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from user
+    where username = #{username,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.miku.po.UserExample" >
+    delete from user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.miku.po.User" >
+    insert into user (username, usernickname, usermail, 
+      userbirthday, usermobile)
+    values (#{username,jdbcType=VARCHAR}, #{usernickname,jdbcType=VARCHAR}, #{usermail,jdbcType=VARCHAR}, 
+      #{userbirthday,jdbcType=DATE}, #{usermobile,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.miku.po.User" >
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="usernickname != null" >
+        usernickname,
+      </if>
+      <if test="usermail != null" >
+        usermail,
+      </if>
+      <if test="userbirthday != null" >
+        userbirthday,
+      </if>
+      <if test="usermobile != null" >
+        usermobile,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="usernickname != null" >
+        #{usernickname,jdbcType=VARCHAR},
+      </if>
+      <if test="usermail != null" >
+        #{usermail,jdbcType=VARCHAR},
+      </if>
+      <if test="userbirthday != null" >
+        #{userbirthday,jdbcType=DATE},
+      </if>
+      <if test="usermobile != null" >
+        #{usermobile,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.miku.po.UserExample" resultType="java.lang.Integer" >
+    select count(*) from user
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update user
+    <set >
+      <if test="record.username != null" >
+        username = #{record.username,jdbcType=VARCHAR},
+      </if>
+      <if test="record.usernickname != null" >
+        usernickname = #{record.usernickname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.usermail != null" >
+        usermail = #{record.usermail,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userbirthday != null" >
+        userbirthday = #{record.userbirthday,jdbcType=DATE},
+      </if>
+      <if test="record.usermobile != null" >
+        usermobile = #{record.usermobile,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update user
+    set username = #{record.username,jdbcType=VARCHAR},
+      usernickname = #{record.usernickname,jdbcType=VARCHAR},
+      usermail = #{record.usermail,jdbcType=VARCHAR},
+      userbirthday = #{record.userbirthday,jdbcType=DATE},
+      usermobile = #{record.usermobile,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.miku.po.User" >
+    update user
+    <set >
+      <if test="usernickname != null" >
+        usernickname = #{usernickname,jdbcType=VARCHAR},
+      </if>
+      <if test="usermail != null" >
+        usermail = #{usermail,jdbcType=VARCHAR},
+      </if>
+      <if test="userbirthday != null" >
+        userbirthday = #{userbirthday,jdbcType=DATE},
+      </if>
+      <if test="usermobile != null" >
+        usermobile = #{usermobile,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where username = #{username,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.miku.po.User" >
+    update user
+    set usernickname = #{usernickname,jdbcType=VARCHAR},
+      usermail = #{usermail,jdbcType=VARCHAR},
+      userbirthday = #{userbirthday,jdbcType=DATE},
+      usermobile = #{usermobile,jdbcType=VARCHAR}
+    where username = #{username,jdbcType=VARCHAR}
+  </update>
+</mapper>
